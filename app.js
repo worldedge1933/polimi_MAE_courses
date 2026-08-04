@@ -15,12 +15,13 @@ const elements = {
 
 const activeAnimations = new WeakMap();
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const dataUrl = new URL("data/courses.json", document.currentScript.src);
 
 init();
 
 async function init() {
   try {
-    const response = await fetch("./data/courses.json");
+    const response = await fetch(dataUrl, { cache: "no-cache" });
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }
@@ -31,7 +32,7 @@ async function init() {
     elements.recentGrid.innerHTML = "";
     elements.courseGroups.innerHTML = "";
     elements.empty.hidden = false;
-    elements.empty.textContent = "课程数据加载失败，请确认 data/courses.json 存在。";
+    elements.empty.textContent = `课程数据加载失败，请确认 ${dataUrl.pathname} 存在。`;
     console.error(error);
   }
 }
