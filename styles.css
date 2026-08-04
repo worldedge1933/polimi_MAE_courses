@@ -1,0 +1,289 @@
+:root {
+  color-scheme: light;
+  --bg: #f5f7f4;
+  --panel: #ffffff;
+  --ink: #1b2520;
+  --muted: #637068;
+  --line: #dfe6df;
+  --accent: #256b54;
+  --accent-strong: #164935;
+  --gold: #b7791f;
+  --blue: #2f6690;
+  --rose: #a04758;
+  --shadow: 0 16px 40px rgba(38, 56, 46, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family:
+    Inter, "PingFang SC", "Microsoft YaHei", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+.site-header {
+  background: #1f3b31;
+  color: #f8fbf7;
+}
+
+.header-inner {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 34px;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  align-items: end;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #b9d7cb;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.05;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(112px, 1fr));
+  gap: 10px;
+}
+
+.stats div {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  padding: 12px 14px;
+  min-height: 82px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.stats strong {
+  display: block;
+  font-size: 1.75rem;
+  line-height: 1.1;
+}
+
+.stats span {
+  display: block;
+  margin-top: 6px;
+  color: #d7e8df;
+  font-size: 0.9rem;
+}
+
+main {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 24px 0 56px;
+}
+
+.toolbar {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(150px, 210px) minmax(170px, 220px);
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 18px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+input,
+select {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  padding: 0 12px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37, 107, 84, 0.14);
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr));
+  gap: 16px;
+}
+
+.course-card {
+  display: grid;
+  gap: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 20px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: start;
+}
+
+.course-meta {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.overall-score {
+  display: grid;
+  place-items: center;
+  flex: 0 0 82px;
+  min-height: 82px;
+  border-radius: 8px;
+  background: #f4efe3;
+  color: var(--gold);
+}
+
+.overall-score strong {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.overall-score span {
+  color: #7a5c2f;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0;
+}
+
+.info-row div {
+  min-width: 0;
+  border-left: 3px solid var(--line);
+  padding-left: 10px;
+}
+
+dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+dd {
+  margin: 2px 0 0;
+  overflow-wrap: anywhere;
+  font-weight: 700;
+}
+
+.review-sections {
+  display: grid;
+  gap: 12px;
+}
+
+.review-sections section {
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.score {
+  display: inline-grid;
+  place-items: center;
+  min-width: 52px;
+  min-height: 30px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.content-score {
+  background: var(--accent);
+}
+
+.assessment-score {
+  background: var(--blue);
+}
+
+.teacher-score {
+  background: var(--rose);
+}
+
+.review-sections p {
+  margin: 0;
+  color: #3d4942;
+}
+
+.card-foot {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.empty-state {
+  margin: 40px 0;
+  text-align: center;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .header-inner,
+  .card-head {
+    display: grid;
+  }
+
+  .stats,
+  .toolbar,
+  .info-row {
+    grid-template-columns: 1fr;
+  }
+
+  .overall-score {
+    width: 100%;
+    min-height: 70px;
+  }
+}

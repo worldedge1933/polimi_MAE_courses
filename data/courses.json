@@ -1,0 +1,68 @@
+[
+  {
+    "code": "CS101",
+    "name": "程序设计基础",
+    "teacher": "张老师",
+    "semester": "2025 春",
+    "category": "专业基础课",
+    "credits": 3,
+    "overallScore": 4.5,
+    "content": {
+      "score": 4.6,
+      "review": "课程覆盖变量、控制流、函数、数组和基础调试方法，节奏比较稳，适合作为后续专业课的入口。"
+    },
+    "assessment": {
+      "score": 4.2,
+      "review": "平时作业和上机练习占比高，期末题目偏基础但要求代码细节准确，认真完成作业会比较有帮助。"
+    },
+    "instructor": {
+      "score": 4.7,
+      "review": "讲解清楚，愿意回答基础问题，课堂示例比较多，适合零基础同学跟进。"
+    },
+    "updatedAt": "2026-03-12"
+  },
+  {
+    "code": "CS203",
+    "name": "数据结构",
+    "teacher": "李老师",
+    "semester": "2025 秋",
+    "category": "专业核心课",
+    "credits": 4,
+    "overallScore": 4.2,
+    "content": {
+      "score": 4.5,
+      "review": "链表、栈、队列、树、图和排序算法讲得比较完整，课程对抽象思维要求明显提高。"
+    },
+    "assessment": {
+      "score": 3.8,
+      "review": "实验和期末都比较看重手写算法能力，复习时需要把复杂度分析和边界情况一起准备。"
+    },
+    "instructor": {
+      "score": 4.3,
+      "review": "课堂逻辑紧凑，板书推导清楚，但进度较快，课后需要及时消化。"
+    },
+    "updatedAt": "2026-04-28"
+  },
+  {
+    "code": "MATH210",
+    "name": "离散数学",
+    "teacher": "王老师",
+    "semester": "2025 秋",
+    "category": "数学基础课",
+    "credits": 3,
+    "overallScore": 3.9,
+    "content": {
+      "score": 4.1,
+      "review": "命题逻辑、集合、关系、图论和组合计数都有涉及，理论性较强，对算法课有长期帮助。"
+    },
+    "assessment": {
+      "score": 3.6,
+      "review": "考试证明题比例不低，平时小测能反映期末风格，建议提前整理常见证明模板。"
+    },
+    "instructor": {
+      "score": 4.0,
+      "review": "老师讲课严谨，例题选择典型，但课堂互动较少，更适合主动提问和自学能力强的同学。"
+    },
+    "updatedAt": "2026-02-20"
+  }
+]
