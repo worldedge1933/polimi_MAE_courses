@@ -1,32 +1,56 @@
 [
   {
     "code": "CS101",
-    "name": "程序设计基础",
-    "teacher": "张老师",
-    "semester": "2025 春",
-    "category": "专业基础课",
+    "name": "FUNDAMENTALS OF ACOUSTICS",
+    "teacher": "",
+    "author": "worldedge1933",
+    "semester": "2025 秋",
     "credits": 3,
     "overallScore": 4.5,
     "content": {
-      "score": 4.6,
-      "review": "课程覆盖变量、控制流、函数、数组和基础调试方法，节奏比较稳，适合作为后续专业课的入口。"
+      "score": 5,
+      "review": "包含了声学基础理论、波动方程等。需要一定的数学和物理基础，但是也不需要太多。课程本身还是比较简单的。"
     },
     "assessment": {
       "score": 4.2,
-      "review": "平时作业和上机练习占比高，期末题目偏基础但要求代码细节准确，认真完成作业会比较有帮助。"
+      "review": ""
     },
     "instructor": {
       "score": 4.7,
       "review": "讲解清楚，愿意回答基础问题，课堂示例比较多，适合零基础同学跟进。"
     },
+    "notes": "建议提前配置好编程环境，实验课会更顺。",
     "updatedAt": "2026-03-12"
+  },
+  {
+    "code": "CS101",
+    "name": "程序设计基础",
+    "teacher": "陈老师",
+    "author": "匿名",
+    "semester": "2025 秋",
+    "credits": 3,
+    "overallScore": 4.1,
+    "content": {
+      "score": 4.2,
+      "review": "内容仍然以基础语法和编程习惯为主，增加了一些小项目练习，适合用来补齐代码实践。"
+    },
+    "assessment": {
+      "score": 4.0,
+      "review": "考核由平时练习、阶段项目和期末上机组成，压力分布比较均匀。"
+    },
+    "instructor": {
+      "score": 4.1,
+      "review": "老师比较重视课堂练习，会提醒常见错误，但对作业格式要求较细。"
+    },
+    "notes": "适合想通过项目练手的同学。",
+    "updatedAt": "2026-05-16"
   },
   {
     "code": "CS203",
     "name": "数据结构",
     "teacher": "李老师",
+    "author": "算法方向同学",
     "semester": "2025 秋",
-    "category": "专业核心课",
     "credits": 4,
     "overallScore": 4.2,
     "content": {
@@ -41,14 +65,15 @@
       "score": 4.3,
       "review": "课堂逻辑紧凑，板书推导清楚，但进度较快，课后需要及时消化。"
     },
+    "notes": "如果准备保研或算法竞赛，这门课值得多投入一些时间。",
     "updatedAt": "2026-04-28"
   },
   {
     "code": "MATH210",
     "name": "离散数学",
     "teacher": "王老师",
+    "author": "",
     "semester": "2025 秋",
-    "category": "数学基础课",
     "credits": 3,
     "overallScore": 3.9,
     "content": {
@@ -63,6 +88,7 @@
       "score": 4.0,
       "review": "老师讲课严谨，例题选择典型，但课堂互动较少，更适合主动提问和自学能力强的同学。"
     },
+    "notes": "",
     "updatedAt": "2026-02-20"
   }
 ]

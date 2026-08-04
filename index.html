@@ -13,16 +13,6 @@
           <p class="eyebrow">Course Review Index</p>
           <h1>专业课程评价</h1>
         </div>
-        <div class="stats" aria-label="课程评价统计">
-          <div>
-            <strong id="courseCount">0</strong>
-            <span>门课程</span>
-          </div>
-          <div>
-            <strong id="averageScore">0.0</strong>
-            <span>平均总评分</span>
-          </div>
-        </div>
       </div>
     </header>
 
@@ -31,13 +21,6 @@
         <label class="search-box">
           <span>搜索</span>
           <input id="searchInput" type="search" placeholder="课程名、代码、老师或关键词" />
-        </label>
-
-        <label>
-          <span>类别</span>
-          <select id="categoryFilter">
-            <option value="all">全部类别</option>
-          </select>
         </label>
 
         <label>
@@ -51,7 +34,20 @@
         </label>
       </section>
 
-      <section id="courseGrid" class="course-grid" aria-live="polite"></section>
+      <section class="page-section" aria-labelledby="recentTitle">
+        <div class="section-heading">
+          <h2 id="recentTitle">最近更新</h2>
+        </div>
+        <div id="recentGrid" class="recent-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="page-section" aria-labelledby="groupsTitle">
+        <div class="section-heading">
+          <h2 id="groupsTitle">按课程分类</h2>
+        </div>
+        <div id="courseGroups" class="course-groups" aria-live="polite"></div>
+      </section>
+
       <p id="emptyState" class="empty-state" hidden>没有找到匹配的课程评价。</p>
     </main>
 
@@ -74,12 +70,12 @@
             <dd class="teacher"></dd>
           </div>
           <div>
-            <dt>学期</dt>
-            <dd class="semester"></dd>
+            <dt>评价者</dt>
+            <dd class="author"></dd>
           </div>
           <div>
-            <dt>类别</dt>
-            <dd class="category"></dd>
+            <dt>学期</dt>
+            <dd class="semester"></dd>
           </div>
         </dl>
 
@@ -106,6 +102,13 @@
               <span class="score teacher-score"></span>
             </div>
             <p class="teacher-review"></p>
+          </section>
+
+          <section class="notes-section">
+            <div class="section-title">
+              <h3>其它/备注</h3>
+            </div>
+            <p class="notes-review"></p>
           </section>
         </div>
 
