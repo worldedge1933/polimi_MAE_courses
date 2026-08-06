@@ -18,6 +18,7 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   min-width: 320px;
   background: var(--bg);
@@ -28,22 +29,33 @@ body {
   line-height: 1.6;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  z-index: -1;
+  background-image: url("./logo_polimi_ing_indinf.svg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 260px auto;
+  opacity: 0.14;
+  pointer-events: none;
+  transform: rotate(-24deg);
+}
+
 .site-header {
-  background: linear-gradient(90deg, #173d32 0%, #245a48 52%, #2f6f7a 100%);
+  background: #1f5f67;
   color: #f8fbf7;
 }
 
 .header-inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 28px;
-  align-items: center;
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
   padding: 48px 0 34px;
 }
 
 .title-copy {
+  max-width: min(700px, calc(100% - min(36vw, 390px)));
   min-width: 0;
 }
 
@@ -68,15 +80,6 @@ h1 {
   color: #d9e9e1;
   font-size: 1rem;
   font-weight: 700;
-}
-
-.school-logo {
-  width: clamp(220px, 30vw, 360px);
-  height: auto;
-  flex: 0 0 auto;
-  border-radius: 8px;
-  background: #fff;
-  padding: 14px;
 }
 
 main {
@@ -439,14 +442,13 @@ h3 {
 }
 
 @media (max-width: 760px) {
-  .header-inner {
-    display: grid;
-    gap: 22px;
-    padding-top: 36px;
+  body::before {
+    background-size: 190px auto;
+    opacity: 0.12;
   }
 
-  .school-logo {
-    width: min(100%, 300px);
+  .title-copy {
+    max-width: 100%;
   }
 
   .card-head {
