@@ -96,7 +96,7 @@
     "overallScore": 4,
     "content": {
       "score": 4,
-      "review": "讲乐器的物理声学原理，以及COMSOL声学建模。内容本身有趣，但是除非你本身考虑将来进入乐器制造领域，不然可能用处不打。COMSOL建模倒是可能有点用。"
+      "review": "讲乐器的物理声学原理，以及COMSOL声学建模。内容本身有趣，但是除非你本身考虑将来进入乐器制造领域，不然可能用处大。COMSOL建模倒是可能有点用。"
     },
     "assessment": {
       "score": 4,
@@ -130,5 +130,93 @@
     },
     "notes": "想将来做音频算法的同学必选。",
     "updatedAt": "2026-08-06"
-  } 
+  },
+  {
+    "code": "063625",
+    "name": "ELECTROACOUSTIC COMPOSITION",
+    "teacher": "Andrea Vigani",
+    "author": "worldedge1933",
+    "semester": "2025 秋",
+    "overallScore": 4,
+    "content": {
+      "score": 3,
+      "review": "讲一些电子音乐的知识以及用代码做电子音乐。"
+    },
+    "assessment": {
+      "score": 5,
+      "review": "做一段电子音乐。好消息是老师给分很好，只要你做了，别音频本身质量有太大问题，基本批发28分，虽然要向老师pre，但是老师不为难人。"
+    },
+    "instructor": {
+      "score": 5,
+      "review": "老师挺好的，一点不为难人"
+    },
+    "notes": "",
+    "updatedAt": "2026-08-06"
+  },
+  {
+    "code": "093212",
+    "name": "DESIGN AND IMPLEMENTATION OF MOBILE APPLICATIONS",
+    "teacher": "Luciano Baresi",
+    "author": "worldedge1933",
+    "semester": "2025 秋",
+    "overallScore": 4,
+    "content": {
+      "score": 4,
+      "review": "讲4种移动端应用的开发方式，如 React Native、Flutter、Kotlin、Swift。但是这种课上课也基本没什么用，主要靠自学。"
+    },
+    "assessment": {
+      "score": 4,
+      "review": "做一个App，写文档，并且pre。老师会有一些对App的硬性要求，按要点扣分，然后再根据你做的好不好再浮动一两分。总体来说拿一个不错的分数还是不困难的。而且老师不太问代码细节。但是总体任务量也不小。"
+    },
+    "instructor": {
+      "score": 3,
+      "review": "老师不是很好说话"
+    },
+    "notes": "",
+    "updatedAt": "2026-08-06"
+  },
+  {
+    "code": "055806",
+    "name": "CRITICAL THINKING",
+    "teacher": "Daniele Chiffi",
+    "author": "worldedge1933",
+    "semester": "2026 春",
+    "overallScore": 5,
+    "content": {
+      "score": 4,
+      "review": "如课程名所言。"
+    },
+    "assessment": {
+      "score": 5,
+      "review": "从老师给出的一些主题里选一个，交一篇3000词论文。但是评分标准不透明，不好说能拿多少分。"
+    },
+    "instructor": {
+      "score": 5,
+      "review": "应该还行，没怎么接触过"
+    },
+    "notes": "哲学课组比较推荐的水课",
+    "updatedAt": "2026-08-06"
+  },
+  {
+    "code": "052581",
+    "name": "ETHICS FOR TECHNOLOGY",
+    "teacher": "Daniele Chiffi",
+    "author": "worldedge1933",
+    "semester": "2026 春",
+    "overallScore": 5,
+    "content": {
+      "score": 4,
+      "review": "如课程名所言。"
+    },
+    "assessment": {
+      "score": 5,
+      "review": "从老师给出的一些主题里选一个，交一篇3000词论文。但是评分标准不透明，不好说能拿多少分。"
+    },
+    "instructor": {
+      "score": 5,
+      "review": "应该还行，没怎么接触过"
+    },
+    "notes": "哲学课组比较推荐的水课",
+    "updatedAt": "2026-08-06"
+  }  
 ]
