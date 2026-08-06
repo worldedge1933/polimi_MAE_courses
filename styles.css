@@ -29,7 +29,7 @@ body {
 }
 
 .site-header {
-  background: #1f3b31;
+  background: linear-gradient(90deg, #173d32 0%, #245a48 52%, #2f6f7a 100%);
   color: #f8fbf7;
 }
 
@@ -71,7 +71,7 @@ h1 {
 }
 
 .school-logo {
-  width: clamp(160px, 24vw, 260px);
+  width: clamp(220px, 30vw, 360px);
   height: auto;
   flex: 0 0 auto;
   border-radius: 8px;
@@ -446,7 +446,7 @@ h3 {
   }
 
   .school-logo {
-    width: min(100%, 240px);
+    width: min(100%, 300px);
   }
 
   .card-head {
