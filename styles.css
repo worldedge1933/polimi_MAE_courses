@@ -34,9 +34,17 @@ body {
 }
 
 .header-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  align-items: center;
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
   padding: 48px 0 34px;
+}
+
+.title-copy {
+  min-width: 0;
 }
 
 .eyebrow {
@@ -52,6 +60,23 @@ h1 {
   margin: 0;
   font-size: clamp(2rem, 4vw, 4rem);
   line-height: 1.05;
+}
+
+.header-subtitle {
+  max-width: 720px;
+  margin: 14px 0 0;
+  color: #d9e9e1;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.school-logo {
+  width: clamp(160px, 24vw, 260px);
+  height: auto;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  background: #fff;
+  padding: 14px;
 }
 
 main {
@@ -414,6 +439,16 @@ h3 {
 }
 
 @media (max-width: 760px) {
+  .header-inner {
+    display: grid;
+    gap: 22px;
+    padding-top: 36px;
+  }
+
+  .school-logo {
+    width: min(100%, 240px);
+  }
+
   .card-head {
     display: grid;
   }
