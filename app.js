@@ -373,5 +373,5 @@ function formatScore(score) {
 }
 
 function formatAuthor(author) {
-  return author || "匿名";
+  return `@${author || "匿名"}`;
 }
