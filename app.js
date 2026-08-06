@@ -115,11 +115,15 @@ function renderCourseGroups(courses) {
     const title = document.createElement("span");
     title.textContent = name;
 
+    const weightedScore = document.createElement("span");
+    weightedScore.className = "group-score";
+    weightedScore.textContent = formatScore(calculateWeightedScore(courseItems));
+
     const count = document.createElement("span");
     count.className = "group-count";
     count.textContent = `${courseItems.length} 条评价`;
 
-    summary.append(title, count);
+    summary.append(title, weightedScore, count);
     details.append(summary);
 
     const groupGrid = document.createElement("div");
@@ -149,6 +153,14 @@ function groupByCourseName(courses) {
   return [...groups.entries()].sort(([a], [b]) => a.localeCompare(b, "zh-Hans-CN"));
 }
 
+function calculateWeightedScore(courses) {
+  const validCourses = courses.filter((course) => Number.isFinite(Number(course.overallScore)));
+  if (!validCourses.length) return 0;
+
+  const totalScore = validCourses.reduce((sum, course) => sum + Number(course.overallScore), 0);
+  return totalScore / validCourses.length;
+}
+
 function renderCompactCourse(course) {
   const details = document.createElement("details");
   details.className = "compact-course";
@@ -161,7 +173,7 @@ function renderCompactCourse(course) {
 
   const meta = document.createElement("span");
   meta.className = "compact-meta";
-  meta.textContent = `${course.code} · ${course.teacher} · ${formatAuthor(course.author)} · ${course.updatedAt}`;
+  meta.textContent = `${formatAuthor(course.author)} · ${course.updatedAt}`;
 
   const name = document.createElement("strong");
   name.textContent = course.name;
@@ -183,6 +195,7 @@ function renderCompactReviewContent(course) {
   const review = document.createElement("div");
   review.className = "compact-review";
 
+  review.append(renderCompactInfo(course));
   review.append(
     renderReviewSection("课程内容", course.content.score, course.content.review, "content-score"),
     renderReviewSection("考试考核", course.assessment.score, course.assessment.review, "assessment-score"),
@@ -194,6 +207,30 @@ function renderCompactReviewContent(course) {
   }
 
   return review;
+}
+
+function renderCompactInfo(course) {
+  const info = document.createElement("dl");
+  info.className = "compact-info";
+
+  info.append(
+    renderCompactInfoItem("课程编号", course.code),
+    renderCompactInfoItem("授课老师", course.teacher || "暂未填写"),
+  );
+
+  return info;
+}
+
+function renderCompactInfoItem(label, value) {
+  const item = document.createElement("div");
+  const term = document.createElement("dt");
+  const description = document.createElement("dd");
+
+  term.textContent = label;
+  description.textContent = value;
+  item.append(term, description);
+
+  return item;
 }
 
 function renderReviewSection(titleText, scoreValue, reviewText, scoreClass = "") {
