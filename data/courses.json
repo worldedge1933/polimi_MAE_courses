@@ -1,90 +1,134 @@
 [
   {
-    "code": "CS101",
+    "code": "052843",
     "name": "FUNDAMENTALS OF ACOUSTICS",
-    "teacher": "",
+    "teacher": "Paolo Biagioni",
     "author": "worldedge1933",
     "semester": "2025 秋",
-    "overallScore": 4.5,
+    "overallScore": 5,
     "content": {
       "score": 5,
-      "review": "包含了声学基础理论、波动方程等。需要一定的数学和物理基础，但是也不需要太多。课程本身还是比较简单的。"
+      "review": "包含了声学基础理论、波动方程等。需要一定的数学和物理基础，但是也不需要太多。课程本身还是比较简单的。还有很多习题课。"
     },
     "assessment": {
-      "score": 4.2,
-      "review": ""
+      "score": 5,
+      "review": "没有平时作业。期末考试是试卷加pre的形式。考试题型设置很套路，刷几套往年卷就可以了，容易拿满分。pre也比较容易，任选声学话题进行 12 分钟 pre，可以线上 pre。最终分数只取决于笔试分数。"
     },
     "instructor": {
-      "score": 4.7,
-      "review": "讲解清楚，愿意回答基础问题，课堂示例比较多，适合零基础同学跟进。"
+      "score": 5,
+      "review": "人不错，pre的时候交流比较轻松。"
     },
-    "notes": "建议提前配置好编程环境，实验课会更顺。",
-    "updatedAt": "2026-03-12"
+    "notes": "这个课是必修课，必须要选的。",
+    "updatedAt": "2026-08-06"
   },
   {
-    "code": "CS101",
-    "name": "程序设计基础",
-    "teacher": "陈老师",
-    "author": "匿名",
+    "code": "052828",
+    "name": "ADVANCED CODING TOOLS AND METHODOLOGIES",
+    "teacher": "Francesco Bruschi",
+    "author": "worldedge1933",
     "semester": "2025 秋",
-    "overallScore": 4.1,
+    "overallScore": 4,
     "content": {
-      "score": 4.2,
-      "review": "内容仍然以基础语法和编程习惯为主，增加了一些小项目练习，适合用来补齐代码实践。"
+      "score": 3,
+      "review": "前端网页内容加一些前端特定的音频链路的内容。如果你本身就会，那你学不到什么东西；如果你本身不会，那你在课堂上大概也学不到什么东西。"
     },
     "assessment": {
-      "score": 4.0,
-      "review": "考核由平时练习、阶段项目和期末上机组成，压力分布比较均匀。"
+      "score": 4,
+      "review": "小组做一个和音乐相关的网页，并线下pre。老师本身对网页的要求应该不高，但是这种pre肯定有特别卷的小组。容易拿不错的分数但不容易拿特别高的分数。老师会问你代码，让你解释。"
     },
     "instructor": {
-      "score": 4.1,
-      "review": "老师比较重视课堂练习，会提醒常见错误，但对作业格式要求较细。"
+      "score": 4,
+      "review": "老师还可以，据说有一个在pre现场的老师会特别严格，但是我那一次没有遇到"
     },
-    "notes": "适合想通过项目练手的同学。",
-    "updatedAt": "2026-05-16"
+    "notes": "考虑到这课10学分，还是比较推荐选一下用来完成培养方案的",
+    "updatedAt": "2026-08-06"
   },
   {
-    "code": "CS203",
-    "name": "数据结构",
-    "teacher": "李老师",
-    "author": "算法方向同学",
+    "code": "054282",
+    "name": "COMPUTER MUSIC - REPRESENTATIONS AND MODELS",
+    "teacher": "Augusto Sarti",
+    "author": "worldedge1933",
     "semester": "2025 秋",
-    "overallScore": 4.2,
+    "overallScore": 4,
     "content": {
-      "score": 4.5,
-      "review": "链表、栈、队列、树、图和排序算法讲得比较完整，课程对抽象思维要求明显提高。"
+      "score": 4,
+      "review": "补充音乐基础。内容本身很好，但是感觉老师讲的不是很有条理，也不是很清晰。"
     },
     "assessment": {
-      "score": 3.8,
-      "review": "实验和期末都比较看重手写算法能力，复习时需要把复杂度分析和边界情况一起准备。"
+      "score": 3,
+      "review": "有两个平时作业，考试是笔试，总分是加权但需要笔记部分及格。作业一个是爵士和声与复杂节拍的标记一个是用机器学习分辨伪造音频，不过作业每年会变。笔试很讨厌，这个课知识点很多，考试全是简答题，考理解和背诵。不是很容易拿高分除非你很擅长背诵。"
     },
     "instructor": {
-      "score": 4.3,
-      "review": "课堂逻辑紧凑，板书推导清楚，但进度较快，课后需要及时消化。"
-    },
-    "notes": "如果准备保研或算法竞赛，这门课值得多投入一些时间。",
-    "updatedAt": "2026-04-28"
-  },
-  {
-    "code": "MATH210",
-    "name": "离散数学",
-    "teacher": "王老师",
-    "author": "",
-    "semester": "2025 秋",
-    "overallScore": 3.9,
-    "content": {
-      "score": 4.1,
-      "review": "命题逻辑、集合、关系、图论和组合计数都有涉及，理论性较强，对算法课有长期帮助。"
-    },
-    "assessment": {
-      "score": 3.6,
-      "review": "考试证明题比例不低，平时小测能反映期末风格，建议提前整理常见证明模板。"
-    },
-    "instructor": {
-      "score": 4.0,
-      "review": "老师讲课严谨，例题选择典型，但课堂互动较少，更适合主动提问和自学能力强的同学。"
+      "score": 4,
+      "review": "老师心肠好，但别的地方可能不太好。"
     },
     "notes": "",
-    "updatedAt": "2026-02-20"
-  }
+    "updatedAt": "2026-08-06"
+  },
+  {
+    "code": "052845",
+    "name": "SIGNALS AND SYSTEMS",
+    "teacher": "Alberto Bernardini",
+    "author": "worldedge1933",
+    "semester": "2026 春",
+    "overallScore": 5,
+    "content": {
+      "score": 5,
+      "review": "内容就是信号与系统的那些东西，没什么可多说的。"
+    },
+    "assessment": {
+      "score": 5,
+      "review": "考试开卷，可携带任意数量纸质资料，题型不太套路但是平时给出的练习题还是足够覆盖的。考试里固定会有一道MATLAB代码题"
+    },
+    "instructor": {
+      "score": 5,
+      "review": "应该还行，没怎么接触过"
+    },
+    "notes": "",
+    "updatedAt": "2026-08-06"
+  },
+  {
+    "code": "051483",
+    "name": "MUSICAL ACOUSTICS",
+    "teacher": "Fabio Antonacci",
+    "author": "worldedge1933",
+    "semester": "2025 秋",
+    "overallScore": 4,
+    "content": {
+      "score": 4,
+      "review": "讲乐器的物理声学原理，以及COMSOL声学建模。内容本身有趣，但是除非你本身考虑将来进入乐器制造领域，不然可能用处不打。COMSOL建模倒是可能有点用。"
+    },
+    "assessment": {
+      "score": 4,
+      "review": "一个COMSOL建模的平时作业加笔试。笔试又分课程前半部分的基础原理部分的计算，以及后半部分针对各种乐器的声学原理的简答题。考试难度不算大，但也不简单。"
+    },
+    "instructor": {
+      "score": 4,
+      "review": "应该还行，没怎么接触过"
+    },
+    "notes": "",
+    "updatedAt": "2026-08-06"
+  },
+  {
+    "code": "052820",
+    "name": "SOUND ANALYSIS, SYNTHESIS AND PROCESSING",
+    "teacher": "Augusto Sarti",
+    "author": "worldedge1933",
+    "semester": "2026 春",
+    "overallScore": 4,
+    "content": {
+      "score": 5,
+      "review": "讲音频算法，涵盖的面比较广。"
+    },
+    "assessment": {
+      "score": 3,
+      "review": "两个平时作业加笔试，总分加权。这个课分两个模块，两个模块是分开考试的。考试题全是简答题，考理解和背诵。"
+    },
+    "instructor": {
+      "score": 4,
+      "review": "老师心肠好，但别的地方可能不太好。"
+    },
+    "notes": "想将来做音频算法的同学必选。",
+    "updatedAt": "2026-08-06"
+  } 
 ]
