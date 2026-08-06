@@ -312,7 +312,7 @@ function cancelActiveAnimation(content) {
 function renderCourseCard(course) {
   const node = elements.template.content.cloneNode(true);
 
-  node.querySelector(".course-meta").textContent = `${course.code} · ${course.credits} 学分`;
+  node.querySelector(".course-meta").textContent = course.code;
   node.querySelector("h2").textContent = course.name;
   node.querySelector(".overall-score strong").textContent = formatScore(course.overallScore);
   node.querySelector(".teacher").textContent = course.teacher;

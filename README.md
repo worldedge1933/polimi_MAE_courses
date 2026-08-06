@@ -29,7 +29,6 @@ http://localhost:8000
   "teacher": "张老师",
   "author": "评价者署名，可留空",
   "semester": "2025 春",
-  "credits": 3,
   "overallScore": 4.5,
   "content": {
     "score": 4.6,
