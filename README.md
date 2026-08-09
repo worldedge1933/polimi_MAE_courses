@@ -4,19 +4,9 @@
 
 页面顶部显示最近更新的紧凑评价卡片，点击后可以展开完整评价。下方按课程名称分组，展开课程后展示该课程下的完整评价卡片。
 
-## 本地预览
+网页地址：
 
-因为页面通过 `fetch` 读取 JSON 文件，建议用本地静态服务器预览：
-
-```powershell
-python -m http.server 8000
-```
-
-然后打开：
-
-```text
-http://localhost:8000
-```
+https://worldedge1933.github.io/polimi_MAE_courses/
 
 ## 修改课程评价
 
@@ -46,12 +36,3 @@ http://localhost:8000
   "updatedAt": "2026-03-12"
 }
 ```
-
-## GitHub Pages 部署
-
-1. 把这个目录推送到 GitHub 仓库。
-2. 打开仓库的 `Settings`。
-3. 进入 `Pages`。
-4. 在 `Build and deployment` 中选择 `Deploy from a branch`。
-5. 选择 `main` 分支和 `/root` 目录。
-6. 保存后等待 GitHub 生成访问链接。

@@ -218,5 +218,181 @@
     },
     "notes": "哲学课组比较推荐的水课",
     "updatedAt": "2026-08-06"
-  }  
+  },
+  {
+    "code": "051483",
+    "name": "MUSICAL ACOUSTICS",
+    "teacher": "Fabio Antonacci",
+    "author": "",
+    "semester": "2025 秋",
+    "overallScore": 4,
+    "content": {
+      "score": 4,
+      "review": "一些振动理论和comsol建模，中等难度"
+    },
+    "assessment": {
+      "score": 4,
+      "review": "项目考试1:1"
+    },
+    "instructor": {
+      "score": 5,
+      "review": "Antonacci人很好，他的课都可以选"
+    },
+    "notes": "",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "code": "051489",
+    "name": "ROOM ACOUSTICS",
+    "teacher": "",
+    "author": "051489",
+    "semester": "2025 秋",
+    "overallScore": 5,
+    "content": {
+      "score": 5,
+      "review": "室内声学理论和实际应用，专业性很强，很实用的课程"
+    },
+    "assessment": {
+      "score": 5,
+      "review": "考试加项目，简单课"
+    },
+    "instructor": {
+      "score": 4,
+      "review": "老师的英语不好口音重"
+    },
+    "notes": "",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "code": "054282",
+    "name": "COMPUTER MUSIC - REPRESENTATIONS AND MODELS",
+    "teacher": "Augusto Sarti",
+    "author": "",
+    "semester": "2025 秋",
+    "overallScore": 3,
+    "content": {
+      "score": 3,
+      "review": "心理声学和乐理，全是背诵和概念"
+    },
+    "assessment": {
+      "score": 3,
+      "review": "考试项目7:3"
+    },
+    "instructor": {
+      "score": 4,
+      "review": "sarti人不错"
+    },
+    "notes": "",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "code": "055670",
+    "name": "SELECTED TOPICS IN MUSIC AND ACOUSTIC ENGINEERING",
+    "teacher": "",
+    "author": "",
+    "semester": "2026 春",
+    "overallScore": 5,
+    "content": {
+      "score": 5,
+      "review": "机器学习，SEC"
+    },
+    "assessment": {
+      "score": 5,
+      "review": "小作业加pre，送分课"
+    },
+    "instructor": {
+      "score": 5,
+      "review": "老师人不错"
+    },
+    "notes": "",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "code": "054283",
+    "name": "COMPUTER MUSIC - LANGUAGES AND SYSTEMS",
+    "teacher": "Fabio Antonacci",
+    "author": "054283",
+    "semester": "2026 春",
+    "overallScore": 4,
+    "content": {
+      "score": 4,
+      "review": "supercollider juce midi"
+    },
+    "assessment": {
+      "score": 4,
+      "review": "项目考试1:2。笔试判卷很松"
+    },
+    "instructor": {
+      "score": 5,
+      "review": "老师人很好"
+    },
+    "notes": "",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "code": "063625",
+    "name": "ELECTROACOUSTIC COMPOSITION",
+    "teacher": "",
+    "author": "",
+    "semester": "2025 秋",
+    "overallScore": 5,
+    "content": {
+      "score": 5,
+      "review": "supercollider做音乐，课不用听"
+    },
+    "assessment": {
+      "score": 5,
+      "review": "做个音乐。做了最低就是28。pre是老师说话"
+    },
+    "instructor": {
+      "score": 5,
+      "review": "最好的老师"
+    },
+    "notes": "",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "code": "052845",
+    "name": "SIGNALS AND SYSTEMS",
+    "teacher": "",
+    "author": "",
+    "semester": "2026 春",
+    "overallScore": 5,
+    "content": {
+      "score": 5,
+      "review": "基础课，国内的信号与系统加数字信号处理和一些基础随机信号处理"
+    },
+    "assessment": {
+      "score": 5,
+      "review": "纯笔试"
+    },
+    "instructor": {
+      "score": 5,
+      "review": "不知道"
+    },
+    "notes": "",
+    "updatedAt": "2026-08-08"
+  },
+  {
+    "code": "052828",
+    "name": "ADVANCED CODING TOOLS AND METHODOLOGIES",
+    "teacher": "",
+    "author": "",
+    "semester": "2025 秋",
+    "overallScore": 5,
+    "content": {
+      "score": 5,
+      "review": "项目课"
+    },
+    "assessment": {
+      "score": 5,
+      "review": "纯pre"
+    },
+    "instructor": {
+      "score": 4,
+      "review": "据说褒贬不一"
+    },
+    "notes": "",
+    "updatedAt": "2026-08-08"
+  }
 ]
