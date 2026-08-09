@@ -2,397 +2,465 @@
   {
     "code": "052843",
     "name": "FUNDAMENTALS OF ACOUSTICS",
-    "teacher": "Paolo Biagioni",
-    "author": "worldedge1933",
-    "semester": "2025 秋",
-    "overallScore": 5,
-    "content": {
-      "score": 5,
-      "review": "包含了声学基础理论、波动方程等。需要一定的数学和物理基础，但是也不需要太多。课程本身还是比较简单的。还有很多习题课。"
-    },
-    "assessment": {
-      "score": 5,
-      "review": "没有平时作业。期末考试是试卷加pre的形式。考试题型设置很套路，刷几套往年卷就可以了，容易拿满分。pre也比较容易，任选声学话题进行 12 分钟 pre，可以线上 pre。最终分数只取决于笔试分数。"
-    },
-    "instructor": {
-      "score": 5,
-      "review": "人不错，pre的时候交流比较轻松。"
-    },
-    "notes": "这个课是必修课，必须要选的。",
-    "updatedAt": "2026-08-06"
+    "reviews": [
+      {
+        "teacher": "Paolo Biagioni",
+        "author": "worldedge1933",
+        "semester": "2025 秋",
+        "overallScore": 5,
+        "content": {
+          "score": 5,
+          "review": "包含了声学基础理论、波动方程等。需要一定的数学和物理基础，但是也不需要太多。课程本身还是比较简单的。还有很多习题课。"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "没有平时作业。期末考试是试卷加pre的形式。考试题型设置很套路，刷几套往年卷就可以了，容易拿满分。pre也比较容易，任选声学话题进行 12 分钟 pre，可以线上 pre。最终分数只取决于笔试分数。"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "人不错，pre的时候交流比较轻松。"
+        },
+        "notes": "这个课是必修课，必须要选的。",
+        "updatedAt": "2026-08-06"
+      }
+    ]
   },
   {
     "code": "052828",
     "name": "ADVANCED CODING TOOLS AND METHODOLOGIES",
-    "teacher": "Francesco Bruschi",
-    "author": "worldedge1933",
-    "semester": "2025 秋",
-    "overallScore": 4,
-    "content": {
-      "score": 3,
-      "review": "前端网页内容加一些前端特定的音频链路的内容。如果你本身就会，那你学不到什么东西；如果你本身不会，那你在课堂上大概也学不到什么东西。"
-    },
-    "assessment": {
-      "score": 4,
-      "review": "小组做一个和音乐相关的网页，并线下pre。老师本身对网页的要求应该不高，但是这种pre肯定有特别卷的小组。容易拿不错的分数但不容易拿特别高的分数。老师会问你代码，让你解释。"
-    },
-    "instructor": {
-      "score": 4,
-      "review": "老师还可以，据说有一个在pre现场的老师会特别严格，但是我那一次没有遇到"
-    },
-    "notes": "考虑到这课10学分，还是比较推荐选一下用来完成培养方案的",
-    "updatedAt": "2026-08-06"
+    "reviews": [
+      {
+        "teacher": "Francesco Bruschi",
+        "author": "worldedge1933",
+        "semester": "2025 秋",
+        "overallScore": 4,
+        "content": {
+          "score": 3,
+          "review": "前端网页内容加一些前端特定的音频链路的内容。如果你本身就会，那你学不到什么东西；如果你本身不会，那你在课堂上大概也学不到什么东西。"
+        },
+        "assessment": {
+          "score": 4,
+          "review": "小组做一个和音乐相关的网页，并线下pre。老师本身对网页的要求应该不高，但是这种pre肯定有特别卷的小组。容易拿不错的分数但不容易拿特别高的分数。老师会问你代码，让你解释。"
+        },
+        "instructor": {
+          "score": 4,
+          "review": "老师还可以，据说有一个在pre现场的老师会特别严格，但是我那一次没有遇到"
+        },
+        "notes": "考虑到这课10学分，还是比较推荐选一下用来完成培养方案的",
+        "updatedAt": "2026-08-06"
+      },
+      {
+        "teacher": "",
+        "author": "",
+        "semester": "2025 秋",
+        "overallScore": 5,
+        "content": {
+          "score": 5,
+          "review": "项目课"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "纯pre"
+        },
+        "instructor": {
+          "score": 4,
+          "review": "据说褒贬不一"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-08"
+      }
+    ]
   },
   {
     "code": "054282",
     "name": "COMPUTER MUSIC - REPRESENTATIONS AND MODELS",
-    "teacher": "Augusto Sarti",
-    "author": "worldedge1933",
-    "semester": "2025 秋",
-    "overallScore": 4,
-    "content": {
-      "score": 4,
-      "review": "补充音乐基础。内容本身很好，但是感觉老师讲的不是很有条理，也不是很清晰。"
-    },
-    "assessment": {
-      "score": 3,
-      "review": "有两个平时作业，考试是笔试，总分是加权但需要笔记部分及格。作业一个是爵士和声与复杂节拍的标记一个是用机器学习分辨伪造音频，不过作业每年会变。笔试很讨厌，这个课知识点很多，考试全是简答题，考理解和背诵。不是很容易拿高分除非你很擅长背诵。"
-    },
-    "instructor": {
-      "score": 4,
-      "review": "老师心肠好，但别的地方可能不太好。"
-    },
-    "notes": "",
-    "updatedAt": "2026-08-06"
+    "reviews": [
+      {
+        "teacher": "Augusto Sarti",
+        "author": "worldedge1933",
+        "semester": "2025 秋",
+        "overallScore": 4,
+        "content": {
+          "score": 4,
+          "review": "补充音乐基础。内容本身很好，但是感觉老师讲的不是很有条理，也不是很清晰。"
+        },
+        "assessment": {
+          "score": 3,
+          "review": "有两个平时作业，考试是笔试，总分是加权但需要笔记部分及格。作业一个是爵士和声与复杂节拍的标记一个是用机器学习分辨伪造音频，不过作业每年会变。笔试很讨厌，这个课知识点很多，考试全是简答题，考理解和背诵。不是很容易拿高分除非你很擅长背诵。"
+        },
+        "instructor": {
+          "score": 4,
+          "review": "老师心肠好，但别的地方可能不太好。"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-06"
+      },
+      {
+        "teacher": "Augusto Sarti",
+        "author": "",
+        "semester": "2025 秋",
+        "overallScore": 3,
+        "content": {
+          "score": 3,
+          "review": "心理声学和乐理，全是背诵和概念"
+        },
+        "assessment": {
+          "score": 3,
+          "review": "考试项目7:3"
+        },
+        "instructor": {
+          "score": 4,
+          "review": "sarti人不错"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-08"
+      }
+    ]
   },
   {
     "code": "052845",
     "name": "SIGNALS AND SYSTEMS",
-    "teacher": "Alberto Bernardini",
-    "author": "worldedge1933",
-    "semester": "2026 春",
-    "overallScore": 5,
-    "content": {
-      "score": 5,
-      "review": "内容就是信号与系统的那些东西，没什么可多说的。"
-    },
-    "assessment": {
-      "score": 5,
-      "review": "考试开卷，可携带任意数量纸质资料，题型不太套路但是平时给出的练习题还是足够覆盖的。考试里固定会有一道MATLAB代码题"
-    },
-    "instructor": {
-      "score": 5,
-      "review": "应该还行，没怎么接触过"
-    },
-    "notes": "",
-    "updatedAt": "2026-08-06"
+    "reviews": [
+      {
+        "teacher": "Alberto Bernardini",
+        "author": "worldedge1933",
+        "semester": "2026 春",
+        "overallScore": 5,
+        "content": {
+          "score": 5,
+          "review": "内容就是信号与系统的那些东西，没什么可多说的。"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "考试开卷，可携带任意数量纸质资料，题型不太套路但是平时给出的练习题还是足够覆盖的。考试里固定会有一道MATLAB代码题"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "应该还行，没怎么接触过"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-06"
+      },
+      {
+        "teacher": "",
+        "author": "",
+        "semester": "2026 春",
+        "overallScore": 5,
+        "content": {
+          "score": 5,
+          "review": "基础课，国内的信号与系统加数字信号处理和一些基础随机信号处理"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "纯笔试"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "不知道"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-08"
+      }
+    ]
   },
   {
     "code": "051483",
     "name": "MUSICAL ACOUSTICS",
-    "teacher": "Fabio Antonacci",
-    "author": "worldedge1933",
-    "semester": "2025 秋",
-    "overallScore": 4,
-    "content": {
-      "score": 4,
-      "review": "讲乐器的物理声学原理，以及COMSOL声学建模。内容本身有趣，但是除非你本身考虑将来进入乐器制造领域，不然可能用处不大。COMSOL建模倒是可能有点用。"
-    },
-    "assessment": {
-      "score": 4,
-      "review": "一个COMSOL建模的平时作业加笔试。笔试又分课程前半部分的基础原理部分的计算，以及后半部分针对各种乐器的声学原理的简答题。考试难度不算大，但也不简单。"
-    },
-    "instructor": {
-      "score": 4,
-      "review": "应该还行，没怎么接触过"
-    },
-    "notes": "",
-    "updatedAt": "2026-08-06"
+    "reviews": [
+      {
+        "teacher": "Fabio Antonacci",
+        "author": "worldedge1933",
+        "semester": "2025 秋",
+        "overallScore": 4,
+        "content": {
+          "score": 4,
+          "review": "讲乐器的物理声学原理，以及COMSOL声学建模。内容本身有趣，但是除非你本身考虑将来进入乐器制造领域，不然可能用处不大。COMSOL建模倒是可能有点用。"
+        },
+        "assessment": {
+          "score": 4,
+          "review": "一个COMSOL建模的平时作业加笔试。笔试又分课程前半部分的基础原理部分的计算，以及后半部分针对各种乐器的声学原理的简答题。考试难度不算大，但也不简单。"
+        },
+        "instructor": {
+          "score": 4,
+          "review": "应该还行，没怎么接触过"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-06"
+      },
+      {
+        "teacher": "Fabio Antonacci",
+        "author": "",
+        "semester": "2025 秋",
+        "overallScore": 4,
+        "content": {
+          "score": 4,
+          "review": "一些振动理论和comsol建模，中等难度"
+        },
+        "assessment": {
+          "score": 4,
+          "review": "项目考试1:1"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "Antonacci人很好，他的课都可以选"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-08"
+      }
+    ]
   },
   {
     "code": "052820",
     "name": "SOUND ANALYSIS, SYNTHESIS AND PROCESSING",
-    "teacher": "Augusto Sarti",
-    "author": "worldedge1933",
-    "semester": "2026 春",
-    "overallScore": 4,
-    "content": {
-      "score": 5,
-      "review": "讲音频算法，涵盖的面比较广。"
-    },
-    "assessment": {
-      "score": 3,
-      "review": "两个平时作业加笔试，总分加权。这个课分两个模块，两个模块是分开考试的。考试题全是简答题，考理解和背诵。"
-    },
-    "instructor": {
-      "score": 4,
-      "review": "老师心肠好，但别的地方可能不太好。"
-    },
-    "notes": "想将来做音频算法的同学必选。",
-    "updatedAt": "2026-08-06"
+    "reviews": [
+      {
+        "teacher": "Augusto Sarti",
+        "author": "worldedge1933",
+        "semester": "2026 春",
+        "overallScore": 4,
+        "content": {
+          "score": 5,
+          "review": "讲音频算法，涵盖的面比较广。"
+        },
+        "assessment": {
+          "score": 3,
+          "review": "两个平时作业加笔试，总分加权。这个课分两个模块，两个模块是分开考试的。考试题全是简答题，考理解和背诵。"
+        },
+        "instructor": {
+          "score": 4,
+          "review": "老师心肠好，但别的地方可能不太好。"
+        },
+        "notes": "想将来做音频算法的同学必选。",
+        "updatedAt": "2026-08-06"
+      }
+    ]
   },
   {
     "code": "063625",
     "name": "ELECTROACOUSTIC COMPOSITION",
-    "teacher": "Andrea Vigani",
-    "author": "worldedge1933",
-    "semester": "2025 秋",
-    "overallScore": 4,
-    "content": {
-      "score": 3,
-      "review": "讲一些电子音乐的知识以及用代码做电子音乐。"
-    },
-    "assessment": {
-      "score": 5,
-      "review": "做一段电子音乐。好消息是老师给分很好，只要你做了，别音频本身质量有太大问题，基本批发28分，虽然要向老师pre，但是老师不为难人。"
-    },
-    "instructor": {
-      "score": 5,
-      "review": "老师挺好的，一点不为难人"
-    },
-    "notes": "",
-    "updatedAt": "2026-08-06"
+    "reviews": [
+      {
+        "teacher": "Andrea Vigani",
+        "author": "worldedge1933",
+        "semester": "2025 秋",
+        "overallScore": 4,
+        "content": {
+          "score": 3,
+          "review": "讲一些电子音乐的知识以及用代码做电子音乐。"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "做一段电子音乐。好消息是老师给分很好，只要你做了，别音频本身质量有太大问题，基本批发28分，虽然要向老师pre，但是老师不为难人。"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "老师挺好的，一点不为难人"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-06"
+      },
+      {
+        "teacher": "",
+        "author": "",
+        "semester": "2025 秋",
+        "overallScore": 5,
+        "content": {
+          "score": 5,
+          "review": "supercollider做音乐，课不用听"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "做个音乐。做了最低就是28。pre是老师说话"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "最好的老师"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-08"
+      }
+    ]
   },
   {
     "code": "093212",
     "name": "DESIGN AND IMPLEMENTATION OF MOBILE APPLICATIONS",
-    "teacher": "Luciano Baresi",
-    "author": "worldedge1933",
-    "semester": "2025 秋",
-    "overallScore": 4,
-    "content": {
-      "score": 4,
-      "review": "讲4种移动端应用的开发方式，如 React Native、Flutter、Kotlin、Swift。但是这种课上课也基本没什么用，主要靠自学。"
-    },
-    "assessment": {
-      "score": 4,
-      "review": "做一个App，写文档，并且pre。老师会有一些对App的硬性要求，按要点扣分，然后再根据你做的好不好再浮动一两分。总体来说拿一个不错的分数还是不困难的。而且老师不太问代码细节。但是总体任务量也不小。"
-    },
-    "instructor": {
-      "score": 3,
-      "review": "老师不是很好说话"
-    },
-    "notes": "",
-    "updatedAt": "2026-08-06"
+    "reviews": [
+      {
+        "teacher": "Luciano Baresi",
+        "author": "worldedge1933",
+        "semester": "2025 秋",
+        "overallScore": 4,
+        "content": {
+          "score": 4,
+          "review": "讲4种移动端应用的开发方式，如 React Native、Flutter、Kotlin、Swift。但是这种课上课也基本没什么用，主要靠自学。"
+        },
+        "assessment": {
+          "score": 4,
+          "review": "做一个App，写文档，并且pre。老师会有一些对App的硬性要求，按要点扣分，然后再根据你做的好不好再浮动一两分。总体来说拿一个不错的分数还是不困难的。而且老师不太问代码细节。但是总体任务量也不小。"
+        },
+        "instructor": {
+          "score": 3,
+          "review": "老师不是很好说话"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-06"
+      }
+    ]
   },
   {
     "code": "055806",
     "name": "CRITICAL THINKING",
-    "teacher": "Daniele Chiffi",
-    "author": "worldedge1933",
-    "semester": "2026 春",
-    "overallScore": 5,
-    "content": {
-      "score": 4,
-      "review": "如课程名所言。"
-    },
-    "assessment": {
-      "score": 5,
-      "review": "从老师给出的一些主题里选一个，交一篇3000词论文。但是评分标准不透明，不好说能拿多少分。"
-    },
-    "instructor": {
-      "score": 5,
-      "review": "应该还行，没怎么接触过"
-    },
-    "notes": "哲学课组比较推荐的水课",
-    "updatedAt": "2026-08-06"
+    "reviews": [
+      {
+        "teacher": "Daniele Chiffi",
+        "author": "worldedge1933",
+        "semester": "2026 春",
+        "overallScore": 5,
+        "content": {
+          "score": 4,
+          "review": "如课程名所言。"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "从老师给出的一些主题里选一个，交一篇3000词论文。但是评分标准不透明，不好说能拿多少分。"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "应该还行，没怎么接触过"
+        },
+        "notes": "哲学课组比较推荐的水课",
+        "updatedAt": "2026-08-06"
+      }
+    ]
   },
   {
     "code": "052581",
     "name": "ETHICS FOR TECHNOLOGY",
-    "teacher": "Daniele Chiffi",
-    "author": "worldedge1933",
-    "semester": "2026 春",
-    "overallScore": 5,
-    "content": {
-      "score": 4,
-      "review": "如课程名所言。"
-    },
-    "assessment": {
-      "score": 5,
-      "review": "从老师给出的一些主题里选一个，交一篇3000词论文。但是评分标准不透明，不好说能拿多少分。"
-    },
-    "instructor": {
-      "score": 5,
-      "review": "应该还行，没怎么接触过"
-    },
-    "notes": "哲学课组比较推荐的水课",
-    "updatedAt": "2026-08-06"
-  },
-  {
-    "code": "051483",
-    "name": "MUSICAL ACOUSTICS",
-    "teacher": "Fabio Antonacci",
-    "author": "",
-    "semester": "2025 秋",
-    "overallScore": 4,
-    "content": {
-      "score": 4,
-      "review": "一些振动理论和comsol建模，中等难度"
-    },
-    "assessment": {
-      "score": 4,
-      "review": "项目考试1:1"
-    },
-    "instructor": {
-      "score": 5,
-      "review": "Antonacci人很好，他的课都可以选"
-    },
-    "notes": "",
-    "updatedAt": "2026-08-08"
+    "reviews": [
+      {
+        "teacher": "Daniele Chiffi",
+        "author": "worldedge1933",
+        "semester": "2026 春",
+        "overallScore": 5,
+        "content": {
+          "score": 4,
+          "review": "如课程名所言。"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "从老师给出的一些主题里选一个，交一篇3000词论文。但是评分标准不透明，不好说能拿多少分。"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "应该还行，没怎么接触过"
+        },
+        "notes": "哲学课组比较推荐的水课",
+        "updatedAt": "2026-08-06"
+      }
+    ]
   },
   {
     "code": "051489",
     "name": "ROOM ACOUSTICS",
-    "teacher": "",
-    "author": "051489",
-    "semester": "2025 秋",
-    "overallScore": 5,
-    "content": {
-      "score": 5,
-      "review": "室内声学理论和实际应用，专业性很强，很实用的课程"
-    },
-    "assessment": {
-      "score": 5,
-      "review": "考试加项目，简单课"
-    },
-    "instructor": {
-      "score": 4,
-      "review": "老师的英语不好口音重"
-    },
-    "notes": "",
-    "updatedAt": "2026-08-08"
-  },
-  {
-    "code": "054282",
-    "name": "COMPUTER MUSIC - REPRESENTATIONS AND MODELS",
-    "teacher": "Augusto Sarti",
-    "author": "",
-    "semester": "2025 秋",
-    "overallScore": 3,
-    "content": {
-      "score": 3,
-      "review": "心理声学和乐理，全是背诵和概念"
-    },
-    "assessment": {
-      "score": 3,
-      "review": "考试项目7:3"
-    },
-    "instructor": {
-      "score": 4,
-      "review": "sarti人不错"
-    },
-    "notes": "",
-    "updatedAt": "2026-08-08"
+    "reviews": [
+      {
+        "teacher": "",
+        "author": "",
+        "semester": "2025 秋",
+        "overallScore": 5,
+        "content": {
+          "score": 5,
+          "review": "室内声学理论和实际应用，专业性很强，很实用的课程"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "考试加项目，简单课"
+        },
+        "instructor": {
+          "score": 4,
+          "review": "老师的英语不好口音重"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-08"
+      }
+    ]
   },
   {
     "code": "055670",
     "name": "SELECTED TOPICS IN MUSIC AND ACOUSTIC ENGINEERING",
-    "teacher": "",
-    "author": "",
-    "semester": "2026 春",
-    "overallScore": 5,
-    "content": {
-      "score": 5,
-      "review": "机器学习，SEC"
-    },
-    "assessment": {
-      "score": 5,
-      "review": "小作业加pre，送分课"
-    },
-    "instructor": {
-      "score": 5,
-      "review": "老师人不错"
-    },
-    "notes": "",
-    "updatedAt": "2026-08-08"
+    "reviews": [
+      {
+        "teacher": "",
+        "author": "",
+        "semester": "2026 春",
+        "overallScore": 5,
+        "content": {
+          "score": 5,
+          "review": "机器学习，SEC"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "小作业加pre，送分课"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "老师人不错"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-08"
+      }
+    ]
   },
   {
     "code": "054283",
     "name": "COMPUTER MUSIC - LANGUAGES AND SYSTEMS",
-    "teacher": "Fabio Antonacci",
-    "author": "054283",
-    "semester": "2026 春",
-    "overallScore": 4,
-    "content": {
-      "score": 4,
-      "review": "supercollider juce midi"
-    },
-    "assessment": {
-      "score": 4,
-      "review": "项目考试1:2。笔试判卷很松"
-    },
-    "instructor": {
-      "score": 5,
-      "review": "老师人很好"
-    },
-    "notes": "",
-    "updatedAt": "2026-08-08"
+    "reviews": [
+      {
+        "teacher": "Fabio Antonacci",
+        "author": "",
+        "semester": "2026 春",
+        "overallScore": 4,
+        "content": {
+          "score": 4,
+          "review": "supercollider juce midi"
+        },
+        "assessment": {
+          "score": 4,
+          "review": "项目考试1:2。笔试判卷很松"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "老师人很好"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-08"
+      }
+    ]
   },
   {
-    "code": "063625",
-    "name": "ELECTROACOUSTIC COMPOSITION",
-    "teacher": "",
-    "author": "",
-    "semester": "2025 秋",
-    "overallScore": 5,
-    "content": {
-      "score": 5,
-      "review": "supercollider做音乐，课不用听"
-    },
-    "assessment": {
-      "score": 5,
-      "review": "做个音乐。做了最低就是28。pre是老师说话"
-    },
-    "instructor": {
-      "score": 5,
-      "review": "最好的老师"
-    },
-    "notes": "",
-    "updatedAt": "2026-08-08"
-  },
-  {
-    "code": "052845",
-    "name": "SIGNALS AND SYSTEMS",
-    "teacher": "",
-    "author": "",
-    "semester": "2026 春",
-    "overallScore": 5,
-    "content": {
-      "score": 5,
-      "review": "基础课，国内的信号与系统加数字信号处理和一些基础随机信号处理"
-    },
-    "assessment": {
-      "score": 5,
-      "review": "纯笔试"
-    },
-    "instructor": {
-      "score": 5,
-      "review": "不知道"
-    },
-    "notes": "",
-    "updatedAt": "2026-08-08"
-  },
-  {
-    "code": "052828",
-    "name": "ADVANCED CODING TOOLS AND METHODOLOGIES",
-    "teacher": "",
-    "author": "",
-    "semester": "2025 秋",
-    "overallScore": 5,
-    "content": {
-      "score": 5,
-      "review": "项目课"
-    },
-    "assessment": {
-      "score": 5,
-      "review": "纯pre"
-    },
-    "instructor": {
-      "score": 4,
-      "review": "据说褒贬不一"
-    },
-    "notes": "",
-    "updatedAt": "2026-08-08"
+    "code": "062074",
+    "name": "VEHICLE ACOUSTICS",
+    "reviews": [
+      {
+        "teacher": "",
+        "author": "",
+        "semester": "2025 秋",
+        "overallScore": 5,
+        "content": {
+          "score": 5,
+          "review": "课程设置的很好，概括很全。三个实验很有意思，老师是Bovisa那边的，认真负责。如果对车辆声学感兴趣的话强烈推荐去选，口试难度不是特别大，但确实要认真去复习每个模块，老师口试的时候会问的很细致。"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "口试加三个实验和一篇论文，其实难度不是特别大，但PPT尤其重要，难度很大的公式可以不用管，但是对于原理和模拟要很熟悉，不能半桶水，老师一问就露馅。实验要好好做，实验自己做的PPT也要很熟。"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "两个老师都很好，一个管实验一个管理论，有什么不懂的老师都会很认真回复你。"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-09"
+      }
+    ]
   }
 ]

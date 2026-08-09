@@ -1,5 +1,6 @@
 const state = {
-  courses: [],
+  courseGroups: [],
+  reviews: [],
   query: "",
   sort: "overall-desc",
 };
@@ -25,7 +26,9 @@ async function init() {
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }
-    state.courses = await response.json();
+
+    state.courseGroups = normalizeCourseGroups(await response.json());
+    state.reviews = flattenCourseGroups(state.courseGroups);
     bindEvents();
     render();
   } catch (error) {
@@ -35,6 +38,29 @@ async function init() {
     elements.empty.textContent = `课程数据加载失败，请确认 ${dataUrl.pathname} 存在。`;
     console.error(error);
   }
+}
+
+function normalizeCourseGroups(courseGroups) {
+  if (!Array.isArray(courseGroups)) return [];
+
+  return courseGroups.map((courseGroup) => ({
+    code: courseGroup.code || "",
+    name: courseGroup.name || "未命名课程",
+    reviews: Array.isArray(courseGroup.reviews) ? courseGroup.reviews : [],
+  }));
+}
+
+function flattenCourseGroups(courseGroups) {
+  return courseGroups.flatMap((courseGroup) =>
+    courseGroup.reviews.map((review, index) => ({
+      ...review,
+      course: {
+        code: courseGroup.code,
+        name: courseGroup.name,
+      },
+      reviewId: `${courseGroup.code || courseGroup.name}-${index}`,
+    })),
+  );
 }
 
 function bindEvents() {
@@ -50,29 +76,29 @@ function bindEvents() {
 }
 
 function render() {
-  const visibleCourses = state.courses.filter(matchesQuery);
+  const visibleReviews = state.reviews.filter(matchesQuery);
 
   elements.recentGrid.innerHTML = "";
   elements.courseGroups.innerHTML = "";
-  elements.empty.hidden = visibleCourses.length > 0;
+  elements.empty.hidden = visibleReviews.length > 0;
 
-  renderRecentCourses(visibleCourses);
-  renderCourseGroups(visibleCourses);
+  renderRecentCourses(visibleReviews);
+  renderCourseGroups(visibleReviews);
 }
 
-function matchesQuery(course) {
+function matchesQuery(review) {
   if (!state.query) return true;
 
   const searchableText = [
-    course.code,
-    course.name,
-    course.teacher,
-    course.author,
-    course.semester,
-    course.content?.review,
-    course.assessment?.review,
-    course.instructor?.review,
-    course.notes,
+    review.course?.code,
+    review.course?.name,
+    review.teacher,
+    review.author,
+    review.semester,
+    review.content?.review,
+    review.assessment?.review,
+    review.instructor?.review,
+    review.notes,
   ]
     .filter(Boolean)
     .join(" ")
@@ -81,31 +107,33 @@ function matchesQuery(course) {
   return searchableText.includes(state.query);
 }
 
-function compareCourses(a, b) {
-  if (state.sort === "overall-asc") return a.overallScore - b.overallScore;
-  if (state.sort === "name-asc") return a.name.localeCompare(b.name, "zh-Hans-CN");
+function compareReviews(a, b) {
+  if (state.sort === "overall-asc") return Number(a.overallScore) - Number(b.overallScore);
+  if (state.sort === "name-asc") {
+    return (a.course?.name || "").localeCompare(b.course?.name || "", "zh-Hans-CN");
+  }
   if (state.sort === "updated-desc") return new Date(b.updatedAt) - new Date(a.updatedAt);
-  return b.overallScore - a.overallScore;
+  return Number(b.overallScore) - Number(a.overallScore);
 }
 
-function renderRecentCourses(courses) {
+function renderRecentCourses(reviews) {
   const fragment = document.createDocumentFragment();
-  const recentCourses = [...courses]
+  const recentReviews = [...reviews]
     .sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt))
     .slice(0, 6);
 
-  for (const course of recentCourses) {
-    fragment.append(renderCompactCourse(course));
+  for (const review of recentReviews) {
+    fragment.append(renderCompactCourse(review));
   }
 
   elements.recentGrid.append(fragment);
 }
 
-function renderCourseGroups(courses) {
+function renderCourseGroups(reviews) {
   const fragment = document.createDocumentFragment();
-  const groupedCourses = groupByCourseName(courses);
+  const groupedReviews = groupReviewsByCourse(reviews);
 
-  for (const [name, courseItems] of groupedCourses) {
+  for (const courseGroup of groupedReviews) {
     const details = document.createElement("details");
     details.className = "course-group";
 
@@ -113,15 +141,15 @@ function renderCourseGroups(courses) {
     summary.className = "course-group-summary";
 
     const title = document.createElement("span");
-    title.textContent = name;
+    title.textContent = `${courseGroup.name} (${courseGroup.code})`;
 
     const weightedScore = document.createElement("span");
     weightedScore.className = "group-score";
-    weightedScore.textContent = formatScore(calculateWeightedScore(courseItems));
+    weightedScore.textContent = formatScore(calculateWeightedScore(courseGroup.reviews));
 
     const count = document.createElement("span");
     count.className = "group-count";
-    count.textContent = `${courseItems.length} 条评价`;
+    count.textContent = `${courseGroup.reviews.length} 条评价`;
 
     summary.append(title, weightedScore, count);
     details.append(summary);
@@ -129,8 +157,8 @@ function renderCourseGroups(courses) {
     const groupGrid = document.createElement("div");
     groupGrid.className = "course-grid";
 
-    for (const course of [...courseItems].sort(compareCourses)) {
-      groupGrid.append(renderCourseCard(course));
+    for (const review of [...courseGroup.reviews].sort(compareReviews)) {
+      groupGrid.append(renderCourseCard(review));
     }
 
     details.append(wrapCollapsibleContent(groupGrid));
@@ -141,27 +169,33 @@ function renderCourseGroups(courses) {
   elements.courseGroups.append(fragment);
 }
 
-function groupByCourseName(courses) {
+function groupReviewsByCourse(reviews) {
   const groups = new Map();
 
-  for (const course of courses) {
-    const name = course.name || "未命名课程";
-    if (!groups.has(name)) groups.set(name, []);
-    groups.get(name).push(course);
+  for (const review of reviews) {
+    const code = review.course?.code || "";
+    const name = review.course?.name || "未命名课程";
+    const key = `${code}::${name}`;
+
+    if (!groups.has(key)) {
+      groups.set(key, { code, name, reviews: [] });
+    }
+
+    groups.get(key).reviews.push(review);
   }
 
-  return [...groups.entries()].sort(([a], [b]) => a.localeCompare(b, "zh-Hans-CN"));
+  return [...groups.values()].sort((a, b) => a.name.localeCompare(b.name, "zh-Hans-CN"));
 }
 
-function calculateWeightedScore(courses) {
-  const validCourses = courses.filter((course) => Number.isFinite(Number(course.overallScore)));
-  if (!validCourses.length) return 0;
+function calculateWeightedScore(reviews) {
+  const validReviews = reviews.filter((review) => Number.isFinite(Number(review.overallScore)));
+  if (!validReviews.length) return 0;
 
-  const totalScore = validCourses.reduce((sum, course) => sum + Number(course.overallScore), 0);
-  return totalScore / validCourses.length;
+  const totalScore = validReviews.reduce((sum, review) => sum + Number(review.overallScore), 0);
+  return totalScore / validReviews.length;
 }
 
-function renderCompactCourse(course) {
+function renderCompactCourse(review) {
   const details = document.createElement("details");
   details.className = "compact-course";
 
@@ -173,49 +207,49 @@ function renderCompactCourse(course) {
 
   const meta = document.createElement("span");
   meta.className = "compact-meta";
-  meta.textContent = `${formatAuthor(course.author)} · ${course.updatedAt}`;
+  meta.textContent = `${formatAuthor(review.author)} · ${review.updatedAt}`;
 
   const name = document.createElement("strong");
-  name.textContent = course.name;
+  name.textContent = review.course?.name || "未命名课程";
 
   text.append(name, meta);
 
   const score = document.createElement("span");
   score.className = "compact-score";
-  score.textContent = formatScore(course.overallScore);
+  score.textContent = formatScore(review.overallScore);
 
   summary.append(text, score);
-  details.append(summary, wrapCollapsibleContent(renderCompactReviewContent(course)));
+  details.append(summary, wrapCollapsibleContent(renderCompactReviewContent(review)));
   setupAnimatedDetails(details);
 
   return details;
 }
 
-function renderCompactReviewContent(course) {
-  const review = document.createElement("div");
-  review.className = "compact-review";
+function renderCompactReviewContent(review) {
+  const reviewNode = document.createElement("div");
+  reviewNode.className = "compact-review";
 
-  review.append(renderCompactInfo(course));
-  review.append(
-    renderReviewSection("课程内容", course.content.score, course.content.review, "content-score"),
-    renderReviewSection("考试考核", course.assessment.score, course.assessment.review, "assessment-score"),
-    renderReviewSection("老师评价", course.instructor.score, course.instructor.review, "teacher-score"),
+  reviewNode.append(renderCompactInfo(review));
+  reviewNode.append(
+    renderReviewSection("课程内容", review.content.score, review.content.review, "content-score"),
+    renderReviewSection("考试考核", review.assessment.score, review.assessment.review, "assessment-score"),
+    renderReviewSection("老师评价", review.instructor.score, review.instructor.review, "teacher-score"),
   );
 
-  if (course.notes) {
-    review.append(renderReviewSection("其它/备注", null, course.notes));
+  if (review.notes) {
+    reviewNode.append(renderReviewSection("其它/备注", null, review.notes));
   }
 
-  return review;
+  return reviewNode;
 }
 
-function renderCompactInfo(course) {
+function renderCompactInfo(review) {
   const info = document.createElement("dl");
   info.className = "compact-info";
 
   info.append(
-    renderCompactInfoItem("课程编号", course.code),
-    renderCompactInfoItem("授课老师", course.teacher || "暂未填写"),
+    renderCompactInfoItem("课程编号", review.course?.code || "暂未填写"),
+    renderCompactInfoItem("授课老师", review.teacher || "暂未填写"),
   );
 
   return info;
@@ -346,24 +380,24 @@ function cancelActiveAnimation(content) {
   }
 }
 
-function renderCourseCard(course) {
+function renderCourseCard(review) {
   const node = elements.template.content.cloneNode(true);
 
-  node.querySelector(".course-meta").textContent = course.code;
-  node.querySelector("h2").textContent = course.name;
-  node.querySelector(".overall-score strong").textContent = formatScore(course.overallScore);
-  node.querySelector(".teacher").textContent = course.teacher;
-  node.querySelector(".author").textContent = formatAuthor(course.author);
-  node.querySelector(".semester").textContent = course.semester;
-  node.querySelector(".content-score").textContent = formatScore(course.content.score);
-  node.querySelector(".content-review").textContent = course.content.review;
-  node.querySelector(".assessment-score").textContent = formatScore(course.assessment.score);
-  node.querySelector(".assessment-review").textContent = course.assessment.review;
-  node.querySelector(".teacher-score").textContent = formatScore(course.instructor.score);
-  node.querySelector(".teacher-review").textContent = course.instructor.review;
-  node.querySelector(".notes-review").textContent = course.notes || "";
-  node.querySelector(".notes-section").hidden = !course.notes;
-  node.querySelector(".updated-at").textContent = `更新于 ${course.updatedAt}`;
+  node.querySelector(".course-meta").textContent = review.course?.code || "";
+  node.querySelector("h2").textContent = review.course?.name || "未命名课程";
+  node.querySelector(".overall-score strong").textContent = formatScore(review.overallScore);
+  node.querySelector(".teacher").textContent = review.teacher || "暂未填写";
+  node.querySelector(".author").textContent = formatAuthor(review.author);
+  node.querySelector(".semester").textContent = review.semester || "暂未填写";
+  node.querySelector(".content-score").textContent = formatScore(review.content.score);
+  node.querySelector(".content-review").textContent = review.content.review;
+  node.querySelector(".assessment-score").textContent = formatScore(review.assessment.score);
+  node.querySelector(".assessment-review").textContent = review.assessment.review;
+  node.querySelector(".teacher-score").textContent = formatScore(review.instructor.score);
+  node.querySelector(".teacher-review").textContent = review.instructor.review;
+  node.querySelector(".notes-review").textContent = review.notes || "";
+  node.querySelector(".notes-section").hidden = !review.notes;
+  node.querySelector(".updated-at").textContent = `更新于 ${review.updatedAt}`;
 
   return node;
 }

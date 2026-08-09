@@ -16,23 +16,27 @@ https://worldedge1933.github.io/polimi_MAE_courses/
 {
   "code": "CS101",
   "name": "程序设计基础",
-  "teacher": "张老师",
-  "author": "评价者署名，可留空",
-  "semester": "2025 春",
-  "overallScore": 4.5,
-  "content": {
-    "score": 4.6,
-    "review": "对课程内容的评价"
-  },
-  "assessment": {
-    "score": 4.2,
-    "review": "对考试或考核方式的评价"
-  },
-  "instructor": {
-    "score": 4.7,
-    "review": "对老师的评价"
-  },
-  "notes": "其它/备注，可留空",
-  "updatedAt": "2026-03-12"
+  "reviews": [
+    {
+      "teacher": "张老师",
+      "author": "评价者署名，可留空",
+      "semester": "2025 春",
+      "overallScore": 4.5,
+      "content": {
+        "score": 4.6,
+        "review": "对课程内容的评价"
+      },
+      "assessment": {
+        "score": 4.2,
+        "review": "对考试或考核方式的评价"
+      },
+      "instructor": {
+        "score": 4.7,
+        "review": "对老师的评价"
+      },
+      "notes": "其它/备注，可留空",
+      "updatedAt": "2026-03-12"
+    }
+  ]
 }
 ```
