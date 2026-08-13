@@ -129,11 +129,32 @@ select:focus {
 }
 
 .section-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: end;
   margin-bottom: 12px;
 }
 
 .section-heading h2 {
   font-size: 1.2rem;
+}
+
+.section-sort {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  min-width: 220px;
+}
+
+.section-sort span {
+  white-space: nowrap;
+}
+
+.compact-select {
+  min-height: 36px;
+  padding: 0 10px;
+  font-size: 0.9rem;
 }
 
 .recent-grid,
@@ -482,6 +503,15 @@ h3 {
   .course-group-summary {
     flex-wrap: wrap;
     padding: 12px 16px;
+  }
+
+  .section-heading {
+    display: grid;
+    align-items: stretch;
+  }
+
+  .section-sort {
+    min-width: 0;
   }
 
   h1 {

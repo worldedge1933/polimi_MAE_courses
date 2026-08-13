@@ -2,7 +2,8 @@ const state = {
   courseGroups: [],
   reviews: [],
   query: "",
-  sort: "overall-desc",
+  sort: "updated-desc",
+  courseSort: "name-asc",
 };
 
 const elements = {
@@ -12,6 +13,7 @@ const elements = {
   template: document.querySelector("#courseCardTemplate"),
   search: document.querySelector("#searchInput"),
   sort: document.querySelector("#sortSelect"),
+  courseSort: document.querySelector("#courseSortSelect"),
 };
 
 const activeAnimations = new WeakMap();
@@ -73,6 +75,11 @@ function bindEvents() {
     state.sort = event.target.value;
     render();
   });
+
+  elements.courseSort.addEventListener("change", (event) => {
+    state.courseSort = event.target.value;
+    render();
+  });
 }
 
 function render() {
@@ -109,9 +116,6 @@ function matchesQuery(review) {
 
 function compareReviews(a, b) {
   if (state.sort === "overall-asc") return Number(a.overallScore) - Number(b.overallScore);
-  if (state.sort === "name-asc") {
-    return (a.course?.name || "").localeCompare(b.course?.name || "", "zh-Hans-CN");
-  }
   if (state.sort === "updated-desc") return new Date(b.updatedAt) - new Date(a.updatedAt);
   return Number(b.overallScore) - Number(a.overallScore);
 }
@@ -141,7 +145,7 @@ function renderCourseGroups(reviews) {
     summary.className = "course-group-summary";
 
     const title = document.createElement("span");
-    title.textContent = `${courseGroup.name} (${courseGroup.code})`;
+    title.textContent = formatCourseHeading(courseGroup);
 
     const weightedScore = document.createElement("span");
     weightedScore.className = "group-score";
@@ -184,7 +188,28 @@ function groupReviewsByCourse(reviews) {
     groups.get(key).reviews.push(review);
   }
 
-  return [...groups.values()].sort((a, b) => a.name.localeCompare(b.name, "zh-Hans-CN"));
+  return [...groups.values()].sort(compareCourseGroups);
+}
+
+function compareCourseGroups(a, b) {
+  if (state.courseSort === "code-asc") {
+    return (a.code || "").localeCompare(b.code || "", "zh-Hans-CN");
+  }
+
+  if (state.courseSort === "score-desc") {
+    const scoreDiff = calculateWeightedScore(b.reviews) - calculateWeightedScore(a.reviews);
+    if (scoreDiff !== 0) return scoreDiff;
+  }
+
+  if (state.courseSort === "count-desc") {
+    const countDiff = b.reviews.length - a.reviews.length;
+    if (countDiff !== 0) return countDiff;
+  }
+
+  const nameDiff = a.name.localeCompare(b.name, "zh-Hans-CN");
+  if (nameDiff !== 0) return nameDiff;
+
+  return (a.code || "").localeCompare(b.code || "", "zh-Hans-CN");
 }
 
 function calculateWeightedScore(reviews) {
@@ -408,4 +433,12 @@ function formatScore(score) {
 
 function formatAuthor(author) {
   return `@${author || "匿名"}`;
+}
+
+function formatCourseHeading(courseGroup) {
+  if (courseGroup.code) {
+    return `${courseGroup.code} ${courseGroup.name}`;
+  }
+
+  return courseGroup.name;
 }

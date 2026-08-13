@@ -29,8 +29,7 @@
           <select id="sortSelect">
             <option value="overall-desc">总评分从高到低</option>
             <option value="overall-asc">总评分从低到高</option>
-            <option value="name-asc">课程名 A-Z</option>
-            <option value="updated-desc">最近更新</option>
+            <option value="updated-desc" selected>最近更新</option>
           </select>
         </label>
       </section>
@@ -45,6 +44,15 @@
       <section class="page-section" aria-labelledby="groupsTitle">
         <div class="section-heading">
           <h2 id="groupsTitle">按课程分类</h2>
+          <label class="section-sort">
+            <span>课程排序</span>
+            <select id="courseSortSelect" class="compact-select">
+              <option value="name-asc">按名字排序</option>
+              <option value="code-asc">按课程号排序</option>
+              <option value="score-desc">按课程总得分排序</option>
+              <option value="count-desc">按评价数量排序</option>
+            </select>
+          </label>
         </div>
         <div id="courseGroups" class="course-groups" aria-live="polite"></div>
       </section>
