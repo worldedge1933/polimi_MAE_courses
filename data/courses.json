@@ -68,6 +68,26 @@
         },
         "notes": "",
         "updatedAt": "2026-08-08"
+      },
+      {
+        "teacher": "BRUSCHI FRANCESCO, RANA VINCENZO",
+        "author": "呼呼",
+        "semester": "2025 秋",
+        "overallScore": 4,
+        "content": {
+          "score": 3,
+          "review": "讲前端三件套+Web Audio API，上课很多实操但是不如自己写个东西捣鼓捣鼓"
+        },
+        "assessment": {
+          "score": 4,
+          "review": "交个音频相关的项目，前端要能跑起来，可组队，pre最好还是有个ppt准备一下，每个人都要说话，老师提问难度看运气，会问代码。"
+        },
+        "instructor": {
+          "score": 3,
+          "review": "有一位老师蛮p的，上课时间有时候会突然延后（但幽默（摩托车叔叔袭来（"
+        },
+        "notes": "在十学分课里应该算好过的，性价比不错",
+        "updatedAt": "2026-08-10"
       }
     ]
   },
@@ -114,6 +134,26 @@
         },
         "notes": "",
         "updatedAt": "2026-08-08"
+      },
+      {
+        "teacher": "SARTI AUGUSTO",
+        "author": "呼呼",
+        "semester": "2025 秋",
+        "overallScore": 4,
+        "content": {
+          "score": 4,
+          "review": "理论课主要是速通乐理和作曲，还有一些心理声学感知觉的东西。实验课是信号处理+基础MIR实操，包含音高、节奏、和弦和声识别、自动曲式分析等，对这方面感兴趣的建议代码吃透。"
+        },
+        "assessment": {
+          "score": 4,
+          "review": "笔试7：作业3，25fall作业一个是和声听辨+曲式分析+节奏听辨，就算有练耳基础也都不是什么好听出来的东西但好在感觉老师其实没有太专业的要求（）另一个是AI音频识别的实验，好跑，作业给分都挺好的，交了就行。笔试这里背背那里背背、就背吧，一大堆要背的。"
+        },
+        "instructor": {
+          "score": 4,
+          "review": "人挺好的老头，在业内有些人脉，听闻同行对他评价也蛮好的，就是讲课有点没重点，主打一个量大管饱。"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-10"
       }
     ]
   },
@@ -278,6 +318,26 @@
         },
         "notes": "",
         "updatedAt": "2026-08-08"
+      },
+      {
+        "teacher": "Vigani Andrea",
+        "author": "呼呼",
+        "semester": "2025 秋",
+        "overallScore": 5,
+        "content": {
+          "score": 5,
+          "review": "介绍用Supercollider作曲，理论掺杂一些计算机音乐历史和Let‘s艺术（）"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "交个音频和作品介绍，口试就是老师给你讲讲为啥得这分。老师是蛮艺术那种，学期中会给挺多次机会和他一起打磨项目想法的，但是都不去也行（）最后的项目交依托也会有高分，交了就行。"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "叔叔你人真好"
+        },
+        "notes": "",
+        "updatedAt": "2026-08-10"
       }
     ]
   },
@@ -434,6 +494,26 @@
         },
         "notes": "",
         "updatedAt": "2026-08-08"
+      },
+      {
+        "teacher": "Antonacci Fabio, Luca Comanducci, Ferdinando Terminiello",
+        "author": "呼呼",
+        "semester": "2026 春",
+        "overallScore": 3,
+        "content": {
+          "score": 3,
+          "review": "Supercollider+JUCE+写板子，很交互"
+        },
+        "assessment": {
+          "score": 3,
+          "review": "交项目+闭卷笔试，会发板子，软硬件都要做，pre建议还是准备一下ppt，笔试简单，稍微刷刷给的资料和往年卷子就行。"
+        },
+        "instructor": {
+          "score": 4,
+          "review": "不熟，听说Antonacci人不错"
+        },
+        "notes": "对于一个5学分的课来说事有点多，只是好过",
+        "updatedAt": "2026-08-10"
       }
     ]
   },
@@ -460,6 +540,32 @@
         },
         "notes": "",
         "updatedAt": "2026-08-09"
+      }
+    ]
+  },
+  {
+    "code": "088966",
+    "name": "MULTIMEDIA SIGNAL PROCESSING",
+    "reviews": [
+      {
+        "teacher": "Bestagini Paolo, Marcon Marco, Sara Mandelli",
+        "author": "呼呼",
+        "semester": "2025 秋",
+        "overallScore": 4,
+        "content": {
+          "score": 4,
+          "review": "补信号处理基础挺好用的，模块1就是DSP数字信号处理，讲离散信号的，资料都在老师的个人网站（https://marconlab.deib.polimi.it/）模块2讲信息论和音视频编码。"
+        },
+        "assessment": {
+          "score": 3,
+          "review": "纯笔试，两个模块可以在不同轮次考，一个模块1.5-2h。模块1两道理论一道MATLAB，不接受加口试/项目提高成绩；模块2一般有一道计算，两道理论，8道判断题（老师可能会突然性情大变出跟以前完全不重合的8道题），一道MATLAB（可能是完全手搓也可能填空）。两个模块都要过18，tg群有整好的详尽note，平常跟着听/复习时间非常充裕的话可以慢慢看那个。"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "Marco老师口音有点重，意大利人都会听不懂那种（）考试看情况放养。Paolo上课和考试都比较认真，讲东西比较有逻辑。Sara是实验老师，实验讲的比较细，老师对信号处理很有热情，仍在科研产出，上课会给ISPL打广告，很认真也很爱笑的大姐姐? ?"
+        },
+        "notes": "建议先找个信号与系统的网课看看，基础知识有点一笔带过",
+        "updatedAt": "2026-08-10"
       }
     ]
   }
