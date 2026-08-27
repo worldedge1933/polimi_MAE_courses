@@ -568,5 +568,31 @@
         "updatedAt": "2026-08-10"
       }
     ]
+  },
+  {
+    "code": "055673",
+    "name": "VIBRATION ANALYSIS AND VIBROACOUSTICS",
+    "reviews": [
+      {
+        "teacher": "",
+        "author": "",
+        "semester": "2025 春",
+        "overallScore": 2,
+        "content": {
+          "score": 2,
+          "review": "课程内容感觉是有用的，但是口试范围比较广，会需要一些时间"
+        },
+        "assessment": {
+          "score": 2,
+          "review": "口试和项目"
+        },
+        "instructor": {
+          "score": 4,
+          "review": "老师人很负责人也很好"
+        },
+        "notes": "考试时间会宽松一些，一个考试季很多考试次数",
+        "updatedAt": "2026-08-25"
+      }
+    ]
   }
 ]
