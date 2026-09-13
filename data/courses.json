@@ -22,6 +22,26 @@
         },
         "notes": "这个课是必修课，必须要选的。",
         "updatedAt": "2026-08-06"
+      },
+      {
+        "teacher": "Paolo Biagioni",
+        "author": "hx",
+        "semester": "2025 秋",
+        "overallScore": 5,
+        "content": {
+          "score": 5,
+          "review": "必选课，挺重要的基础课，内容比较广但是不深，很适合入门。"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "笔试（题型比较常规，看笔记+刷题肯定高分），口试（自选声学相关主题做一个12分钟pre，老师会对涉及到的基础概念进行提问）"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "老师讲课比较清晰。"
+        },
+        "notes": "",
+        "updatedAt": "2026-09-12"
       }
     ]
   },
@@ -88,6 +108,26 @@
         },
         "notes": "在十学分课里应该算好过的，性价比不错",
         "updatedAt": "2026-08-10"
+      },
+      {
+        "teacher": "BRUSCHI FRANCESCO, RANA VINCENZO",
+        "author": "hx",
+        "semester": "2025 秋",
+        "overallScore": 3,
+        "content": {
+          "score": 3,
+          "review": "网页前端和音频相关的基础python，并不太advanced。"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "音频相关的网页前端小组项目，pre的时候会问代码细节。"
+        },
+        "instructor": {
+          "score": 3,
+          "review": "BRUSCHI FRANCESCO讲得一般吧，不如自学"
+        },
+        "notes": "1个项目10学分，冲学分水课。也有卷王好好打磨了项目放简历里的，上限可以很高",
+        "updatedAt": "2026-09-12"
       }
     ]
   },
@@ -272,6 +312,26 @@
         },
         "notes": "想将来做音频算法的同学必选。",
         "updatedAt": "2026-08-06"
+      },
+      {
+        "teacher": "Augusto Sarti和随机刷新的助教们",
+        "author": "hx",
+        "semester": "2025 春",
+        "overallScore": 5,
+        "content": {
+          "score": 5,
+          "review": "模块1对应国内现代信号处理（传统方法），模块2是声音合成和声场。内容非常丰富，结合一下Pezzoli马上要开的data-driven处理（深度学习方法），基本覆盖音频信号处理各种task的state-of-art算法。想看懂信号处理相关论文/想做这块毕设必选"
+        },
+        "assessment": {
+          "score": 3,
+          "review": "项目：模块1 LPC（语音编码合成，talk-box，每年任务会有变化）模块2 WDF\n笔试：计算/推导证明/概念解释应有尽有，考试范围如星辰大海且变幻莫测"
+        },
+        "instructor": {
+          "score": 3,
+          "review": "Sarti虽然名望很大但是讲课其实比较发散，有些助教比较i，讲课效果也一般。这门课不要指望能在课上听懂，基础不好的话b站自学吧，基础好的直接学笔记?刷题"
+        },
+        "notes": "虽然考试过程很痛苦但是这是一门干货多到头秃的课，做信号处理必选。mae的源头应该就是以前cs里的音频处理track，后面慢慢整合起整个大专业，所以这门课课上应该会见到ISPL组的半壁江山，想要进组/搞研究的同学们可以social一下",
+        "updatedAt": "2026-09-12"
       }
     ]
   },
@@ -442,6 +502,26 @@
         },
         "notes": "",
         "updatedAt": "2026-08-08"
+      },
+      {
+        "teacher": "CAIROLI MARIA, IANNACE GINO",
+        "author": "hx",
+        "semester": "2025 秋",
+        "overallScore": 3,
+        "content": {
+          "score": 3,
+          "review": "建筑被动声学（吸声隔声扩散）设计，模块一是些基础知识，模块二是各种剧场/教室/多功能厅设计。有几个lab，剧场参观和很基础的测量；教室吸声测量；消声室参观。"
+        },
+        "assessment": {
+          "score": 4,
+          "review": "3个小组项目：lab参观报告；材料吸声计算；教室仿真（但是是用一个巨难用只有意大利语的软件）。笔试是些ppt上基础知识的简答和老师论文的概述，难度不高。"
+        },
+        "instructor": {
+          "score": 2,
+          "review": "Gino的英语一言难尽，不用听直接看笔记吧。Maria会带着看看实际的项目。"
+        },
+        "notes": "课程内容比较基础，真的有志于做建声（但是建筑类现在什么行情想必大家也都知道）的话这点内容远远不够",
+        "updatedAt": "2026-09-12"
       }
     ]
   },
@@ -468,6 +548,26 @@
         },
         "notes": "",
         "updatedAt": "2026-08-08"
+      },
+      {
+        "teacher": "",
+        "author": "hx",
+        "semester": "2026 春",
+        "overallScore": 4,
+        "content": {
+          "score": 5,
+          "review": "外校老师开的远程课，内容据说会变，但是近两年都是音频音乐的机器学习/深底学习，适合入门，但是0基础同学建议自己额外b站再看看"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "5个随堂小测，4个python lab，最后1个小组项目（从列表挑一个task，然后根据要求自选模型各种调参，上限可以很高）"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "老师人挺好"
+        },
+        "notes": "",
+        "updatedAt": "2026-09-12"
       }
     ]
   },
@@ -566,6 +666,26 @@
         },
         "notes": "建议先找个信号与系统的网课看看，基础知识有点一笔带过",
         "updatedAt": "2026-08-10"
+      },
+      {
+        "teacher": "Bestagini Paolo, Marcon Marco, Sara Mandelli",
+        "author": "hx",
+        "semester": "2025 秋",
+        "overallScore": 5,
+        "content": {
+          "score": 5,
+          "review": "模块1 dsp基础\n模块2 信息论和图片音视频编码，内容比较实用"
+        },
+        "assessment": {
+          "score": 3,
+          "review": "笔试 模块1是2-3道计算和手写matlab代码（DFT+数字滤波器设计+采样转换）老师会给参考答案，理解的话不难背；模块2是1道计算，2-3道概念解释，8道判断，1道手写matlab代码（一个图片处理算法全流程），内容挺丰富，使劲背吧"
+        },
+        "instructor": {
+          "score": 4,
+          "review": "模块1 Marcon Marco不用听，自己看网课吧；模块2 Bestagini Paolo讲得挺好，这个老师是网传毕设严师，但是活跃在信号处理领域一线，有意的同学多刷脸熟吧"
+        },
+        "notes": "建议学过信号与系统的就不用再学一遍信号与系统了，选多媒体信号处理吧，稍微贴近应用一些",
+        "updatedAt": "2026-09-12"
       }
     ]
   },
@@ -592,6 +712,52 @@
         },
         "notes": "考试时间会宽松一些，一个考试季很多考试次数",
         "updatedAt": "2026-08-25"
+      },
+      {
+        "teacher": "",
+        "author": "hx",
+        "semester": "2025 春",
+        "overallScore": 2,
+        "content": {
+          "score": 5,
+          "review": "对应国内振动力学的内容，振动方向的基础课。但是内容比较理论，非常多推导，内容比较深，挺难"
+        },
+        "assessment": {
+          "score": 3,
+          "review": "模块1: 3个项目（1dof系统计算+matlab仿真；多dof计算+仿真；参数估计实验数据仿真）+口试（老师当场给题目，现场写答案，然后哪里不会点哪里）"
+        },
+        "instructor": {
+          "score": 3,
+          "review": "口试灵活性太强了很难刷题准备，模块1老师要求还是很高的，遇到卡壳的地方会让你当场推导，慎选；据说模块2考试口试比较chill"
+        },
+        "notes": "无意做振动方向的就不要折磨自己了",
+        "updatedAt": "2026-09-12"
+      }
+    ]
+  },
+  {
+    "code": "052834",
+    "name": "ELECTRONICS AND ELECTROACOUSTICS FOR SOUND ENGINEERING",
+    "reviews": [
+      {
+        "teacher": "FILLPO MELE, GIUSEPPE BERTUCCIO",
+        "author": "hx",
+        "semester": "2025 春",
+        "overallScore": 5,
+        "content": {
+          "score": 5,
+          "review": "EE讲各种模拟音频电路，EA讲麦克风、扬声器的电力声建模，都会结合具体产品手册里的电路和参数，理论和实践结合很好的课。lab 1在讲完调音台电路之后，会让你自己上手设置模拟调音台做个小扩声；lab 2是去k-array（线阵列扬声器）和powersoft（功放）厂家一日游，会展示现场扩声系统的仿真设计案例，试听各种奇形怪状的喇叭；还会有些扬声器设计的seminar"
+        },
+        "assessment": {
+          "score": 5,
+          "review": "笔试\n电路是1道大计算+1-2道概念解释，计算题题量比较大，简答题老师对公式和电路图的准确度要求比较高\n电声计算题比较散，不像ee环环相扣 一错全错，概念解释需要画各种结构简图和等效电路图，内容比较绕还是得仔细理解一下\n也是比较难搞的考试课了"
+        },
+        "instructor": {
+          "score": 5,
+          "review": "两个老师都讲得非常清晰，他们和专业音频领域的各种厂商关系很好，会经常推荐实习/研究机会。"
+        },
+        "notes": "音频硬件，特别是感兴趣专业音频这方向的话建议选",
+        "updatedAt": "2026-09-12"
       }
     ]
   }
